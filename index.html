@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Drill 2: Working on Strings</title>
+
+    <!-- PyScript setup -->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <link href='https://fonts.googleapis.com/css?family=Emilys Candy' rel='stylesheet'>
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+
+    <style>
+      body {
+         font-family: 'Emilys Candy';font-size: 22px;
+        padding: 20px;
+        max-width: 550px;
+        margin: auto;
+        background-image: url(https://i.pinimg.com/1200x/8b/31/93/8b3193635ea9f2600d112a698f423957.jpg);
+        background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+      }
+      h1 {
+        text-align: center;
+        color: #2c3e50;
+      }
+      label {
+        font-weight: bold;
+        margin-top: 10px;
+        display: block;
+      }
+      input, select, button {
+        margin-top: 5px;
+        padding: 10px;
+        display: block;
+        width: 100%;
+        font-size: 16px;
+      }
+      button {
+        background: #d5e885;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        margin-top: 15px;
+        cursor: pointer;
+      }
+      button:hover {
+        background: #2980b9;
+      }
+      #output {
+        margin-top: 20px;
+        white-space: pre-wrap;
+        background: #eef2f3;
+        padding: 15px;
+        border-radius: 5px;
+        font-family: "Courier New", monospace;
+      }
+    </style>
+  </head>
+  <body>
+
+    <h1>📇 String Showcase: My Basic Info</h1>
+
+    <label for="fname">First Name:</label>
+    <input id="fname" type="text" placeholder="Enter your first name" />
+
+    <label for="lname">Last Name:</label>
+    <input id="lname" type="text" placeholder="Enter your last name" />
+
+    <label for="birthdate">Birthdate:</label>
+    <input id="birthdate" type="date" />
+
+    <label for="age">Age:</label>
+    <input id="age" type="number" placeholder="Enter your age" />
+
+    <label for="school">School:</label>
+    <input id="school" type="text" placeholder="Enter your school" />
+
+    <label for="subject">Favorite Subject:</label>
+    <select id="subject">
+      <option value="Social Studies">Social Studies</option>
+      <option value="Science">Science</option>
+      <option value="Math">Math</option>
+      <option value="English">English</option>
+      <option value="Filipino">Filipino</option>
+      <option value="PE">PE</option>
+      <option value="TLE">TLE</option>
+      <option value="ICT">ICT</option>
+      <option value="Music">Music</option>
+      <option value="CAT">CAT</option>
+      <option value="Values Education">Values Education</option>
+    </select>
+
+    <button id="submit-btn">Generate Message</button>
+
+    <div id="output"></div>
+
+    <py-config>
+      [[fetch]]
+      files = ["main.py"]
+    </py-config>
+
+    <script type="py" src="main.py"></script>
+
+  </body>
+</html>
